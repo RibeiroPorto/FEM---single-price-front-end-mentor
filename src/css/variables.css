@@ -1,0 +1,12 @@
+
+:root{
+    --primary-containers: hsl(179, 62%, 43%);
+    --primary-contents: hsl(71, 73%, 54%);
+
+    --neutral-background: hsl(204, 43%, 93%);
+    --neutral-color: hsl(218, 22%, 67%);
+    --neutral_container-background: white;
+
+    --body-font-size:16px;
+    --main-font-family:'Karla', sans-serif;
+}

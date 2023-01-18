@@ -1,0 +1,145 @@
+body{
+   width:100%;
+   height:100vh;
+   display:flex;
+   align-items: center;
+   justify-content: center;
+   background-color: var(--neutral-background);
+
+}
+.main-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+   font-size: var(--body-font-size);
+   font-family: var(--main-font-family);
+   max-width:61rem;
+   background-color: var(--neutral_container-background);
+   border-radius: 10px;
+   overflow: hidden;
+   box-shadow: 0 20px 20px -10px rgba(0,0,0,0.2);
+
+}
+.main-container .main-info{
+    grid-area:  1/1 / 1/3;
+    padding: 4rem;
+   
+}
+.main-container .main-info h1{
+    margin-bottom:2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color:var(--primary-containers);
+}
+.main-container .main-info :nth-child(2){
+    margin:0 0 .5rem 0;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color:var(--primary-contents);
+    
+}
+.main-container .main-info :last-child{
+    line-height: 2.8rem;
+    font-size: 1.6rem;
+    color:var(--neutral-color);
+    
+    
+}
+
+.main-container .buying-info{
+    grid-area:  2/1 / 2/2;
+    padding:3rem;
+    display:flex;
+    flex-direction: column;
+    background-color: var(--primary-containers);
+    color:white;
+    
+    
+}
+.main-container .buying-info .subscription.title{
+    margin-bottom:2rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.main-container .buying-info .value{
+    margin-bottom:1rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+
+}
+.main-container .buying-info .value .period{
+    font-size: 1.5rem;
+    opacity:0.6;
+    margin-left:1.5rem;
+    font-weight: 400;
+}
+.main-container .buying-info .description{
+    font-size: 1.5rem;
+    opacity:0.8;
+    
+}
+.main-container .buying-info .buttom{
+    background-color: var(--primary-contents);
+    width:100%;
+    height:4.5rem;
+    text-align: center;
+    line-height: 4.5rem;
+    color:white;
+    border-radius: 8px;
+    box-shadow:  20px 20px 20px 0 rgba(0,0,0,0.1);
+    margin-top:2rem;
+}
+
+.main-container .additional-info{
+    grid-area:  2/2 / 3/3;
+    padding:3rem 9.5rem 3rem 3.5rem;
+    background-color: var(--primary-containers);
+    opacity:0.9;
+    color:white;
+}
+.main-container .additional-info .title{
+    margin-bottom:1.5rem;
+}
+.main-container .additional-info .reasons{
+    font-size: 1.3rem;
+    opacity:0.6;
+    line-height:1.8rem;
+}
+@media (max-width: 425px){
+    body{
+        align-items: flex-start;
+    }
+    .main-container{
+        margin:1rem 3rem 0;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+    .main-container .main-info{
+        grid-area:1/1 /2/2;
+    }
+    .main-container .buying-info{
+        grid-area:2/1 /3/2;
+    }
+    .main-container .buying-info .value{
+        font-size: 4rem;
+        
+    }
+    .main-container .buying-info .description{
+        font-size: 1.8rem;
+        margin-top: 1.5rem;
+    }
+    .main-container .buying-info .buttom{
+        margin-top: 6rem;
+        height: 5rem;
+        line-height: 5rem;
+    }
+    .main-container .additional-info{
+        grid-area:3/1 /4/2;
+
+    }
+    .main-container .additional-info .reasons{
+        font-size: 1.5rem;
+        opacity:0.6;
+        line-height:2.5rem;
+    }
+}
